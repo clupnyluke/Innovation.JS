@@ -1,0 +1,5 @@
+<map id="Express_Integer" name="Express_Integer">
+<area shape="rect" id="node2" href="$class_express___predefined_type.html" title="Base class for predefined types (like NUMBER or STRING) in EXPRESS schema. " alt="" coords="5,155,172,181"/>
+<area shape="rect" id="node3" href="$class_express___type.html" title="Provides basis for identification (reference) to some type in express schema. " alt="" coords="36,80,141,107"/>
+<area shape="rect" id="node4" href="$class_standard___transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy. " alt="" coords="21,5,156,32"/>
+</map>

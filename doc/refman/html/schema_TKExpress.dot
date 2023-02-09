@@ -1,0 +1,6 @@
+digraph schema_TKExpress
+{
+	TKExpress [ URL = "toolkit_tkexpress.html", shape = box ]
+	TKernel [ URL = "toolkit_tkernel.html" , shape = box ]
+	TKExpress -> TKernel [ color = "midnightblue", style = "solid" ]
+}

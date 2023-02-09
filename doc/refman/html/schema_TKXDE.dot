@@ -1,0 +1,6 @@
+digraph schema_TKXDE
+{
+	TKXDE [ URL = "toolkit_tkxde.html", shape = box ]
+	TKernel [ URL = "toolkit_tkernel.html" , shape = box ]
+	TKXDE -> TKernel [ color = "midnightblue", style = "solid" ]
+}

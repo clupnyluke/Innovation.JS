@@ -1,0 +1,25 @@
+<map id="StepVisual_TessellatedItem" name="StepVisual_TessellatedItem">
+<area shape="rect" id="node5" href="$class_step_visual___coordinates_list.html" title="StepVisual_CoordinatesList" alt="" coords="1010,5,1193,32"/>
+<area shape="rect" id="node6" href="$class_step_visual___repositioned_tessellated_item.html" title="Representation of STEP entity RepositionedTessellatedItem. " alt="" coords="972,56,1231,83"/>
+<area shape="rect" id="node7" href="$class_step_visual___tessellated_curve_set.html" title="StepVisual_TessellatedCurveSet" alt="" coords="996,107,1207,133"/>
+<area shape="rect" id="node8" href="$class_step_visual___tessellated_geometric_set.html" title="StepVisual_TessellatedGeometricSet" alt="" coords="982,157,1221,184"/>
+<area shape="rect" id="node10" href="$class_step_visual___tessellated_point_set.html" title="Representation of STEP entity TessellatedPointSet. " alt="" coords="997,208,1205,235"/>
+<area shape="rect" id="node11" href="$class_step_visual___tessellated_shell.html" title="Representation of STEP entity TessellatedShell. " alt="" coords="1008,259,1195,285"/>
+<area shape="rect" id="node12" href="$class_step_visual___tessellated_solid.html" title="Representation of STEP entity TessellatedSolid. " alt="" coords="1008,309,1195,336"/>
+<area shape="rect" id="node13" href="$class_step_visual___tessellated_structured_item.html" title="Representation of STEP entity TessellatedStructuredItem. " alt="" coords="980,360,1223,387"/>
+<area shape="rect" id="node22" href="$class_step_visual___tessellated_surface_set.html" title="Representation of STEP entity TessellatedSurfaceSet. " alt="" coords="990,411,1213,437"/>
+<area shape="rect" id="node24" href="$class_step_visual___tessellated_wire.html" title="Representation of STEP entity TessellatedWire. " alt="" coords="1009,461,1194,488"/>
+<area shape="rect" id="node2" href="$class_step_geom___geometric_representation_item.html" title="StepGeom_GeometricRepresentationItem" alt="" coords="431,233,693,260"/>
+<area shape="rect" id="node3" href="$class_step_repr___representation_item.html" title="StepRepr_RepresentationItem" alt="" coords="188,233,383,260"/>
+<area shape="rect" id="node4" href="$class_standard___transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy. " alt="" coords="5,233,140,260"/>
+<area shape="rect" id="node9" href="$class_step_visual___repositioned_tessellated_geometric_set.html" title="Representation of complex STEP entity RepositionedTessellatedGeometricSet. " alt="" coords="1279,150,1512,191"/>
+<area shape="rect" id="node14" href="$class_step_visual___tessellated_edge.html" title="Representation of STEP entity TessellatedEdge. " alt="" coords="1301,237,1489,264"/>
+<area shape="rect" id="node17" href="$class_step_visual___tessellated_face.html" title="Representation of STEP entity TessellatedFace. " alt="" coords="1302,324,1489,351"/>
+<area shape="rect" id="node21" href="$class_step_visual___tessellated_vertex.html" title="Representation of STEP entity TessellatedVertex. " alt="" coords="1297,375,1493,401"/>
+<area shape="rect" id="node15" href="$class_step_visual___cubic_bezier_tessellated_edge.html" title="Representation of STEP entity CubicBezierTessellatedEdge. " alt="" coords="1561,187,1820,213"/>
+<area shape="rect" id="node16" href="$class_step_visual___tessellated_connecting_edge.html" title="Representation of STEP entity TessellatedConnectingEdge. " alt="" coords="1564,237,1817,264"/>
+<area shape="rect" id="node18" href="$class_step_visual___complex_triangulated_face.html" title="Representation of STEP entity ComplexTriangulatedFace. " alt="" coords="1569,288,1812,315"/>
+<area shape="rect" id="node19" href="$class_step_visual___cubic_bezier_triangulated_face.html" title="Representation of STEP entity CubicBezierTriangulatedFace. " alt="" coords="1560,339,1821,365"/>
+<area shape="rect" id="node20" href="$class_step_visual___triangulated_face.html" title="Representation of STEP entity TriangulatedFace. " alt="" coords="1595,389,1786,416"/>
+<area shape="rect" id="node23" href="$class_step_visual___complex_triangulated_surface_set.html" title="Representation of STEP entity ComplexTriangulatedSurfaceSet. " alt="" coords="1289,426,1502,467"/>
+</map>

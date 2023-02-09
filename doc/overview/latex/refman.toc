@@ -1,0 +1,13 @@
+\contentsline {section}{\numberline {1}Preface}{2}{section.1}
+\contentsline {section}{\numberline {2}Notation}{3}{section.2}
+\contentsline {section}{\numberline {3}Illumination model}{4}{section.3}
+\contentsline {section}{\numberline {4}Practical application}{7}{section.4}
+\contentsline {section}{\numberline {5}Image based lighting}{8}{section.5}
+\contentsline {section}{\numberline {6}Monte-\/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\DOTSB \leftarrow \joinrel \rhook $}}{}{}Carlo numeric integration}{9}{section.6}
+\contentsline {section}{\numberline {7}Split sum}{12}{section.7}
+\contentsline {section}{\numberline {8}Importance sampling}{14}{section.8}
+\contentsline {section}{\numberline {9}Specular map}{17}{section.9}
+\contentsline {section}{\numberline {10}Spherical harmonics}{19}{section.10}
+\contentsline {section}{\numberline {11}Transparent materials}{23}{section.11}
+\contentsline {section}{\numberline {12}Low discrepancy sequence}{24}{section.12}
+\contentsline {section}{\numberline {13}References}{25}{section.13}

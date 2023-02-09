@@ -1,0 +1,12 @@
+<map id="DE_Provider" name="DE_Provider">
+<area shape="rect" id="node3" href="$class_d_e_b_rep_cascade___provider.html" title="The class to transfer BRep files. Reads and Writes any BRep files into/from OCCT. Each operation need..." alt="" coords="330,5,506,32"/>
+<area shape="rect" id="node4" href="$class_d_e_x_c_a_f_cascade___provider.html" title="The class to transfer XCAF Documents. Reads and Writes any XDE Document files into/from OCCT..." alt="" coords="329,56,507,83"/>
+<area shape="rect" id="node5" href="$class_i_g_e_s_c_a_f_control___provider.html" title="The class to transfer IGES files. Reads and Writes any IGES files into/from OCCT. Each operation need..." alt="" coords="331,107,505,133"/>
+<area shape="rect" id="node6" href="$class_r_w_gltf___provider.html" title="The class to transfer glTF files. Reads and Writes any glTF files into/from OCCT. Each operation need..." alt="" coords="359,157,477,184"/>
+<area shape="rect" id="node7" href="$class_r_w_obj___provider.html" title="The class to transfer OBJ files. Reads and Writes any OBJ files into/from OCCT. Each operation needs ..." alt="" coords="359,208,477,235"/>
+<area shape="rect" id="node8" href="$class_r_w_ply___provider.html" title="The class to transfer PLY files. Writes any PLY files from OCCT. Each operation needs configuration n..." alt="" coords="360,259,476,285"/>
+<area shape="rect" id="node9" href="$class_r_w_stl___provider.html" title="The class to transfer STL files. Reads and Writes any STL files into/from OCCT. Each operation needs ..." alt="" coords="361,309,475,336"/>
+<area shape="rect" id="node10" href="$class_s_t_e_p_c_a_f_control___provider.html" title="The class to transfer STEP files. Reads and Writes any STEP files into/from OCCT. Each operation need..." alt="" coords="330,360,506,387"/>
+<area shape="rect" id="node11" href="$class_vrml___provider.html" title="The class to transfer VRML files. Reads and Writes any VRML files into/from OCCT. Each operation need..." alt="" coords="367,411,469,437"/>
+<area shape="rect" id="node2" href="$class_standard___transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy. " alt="" coords="5,208,140,235"/>
+</map>

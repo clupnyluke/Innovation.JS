@@ -1,0 +1,8 @@
+<map id="Express_Item" name="Express_Item">
+<area shape="rect" id="node3" href="$class_express___alias.html" title="Implements TYPE = type (alias) item of the EXPRESS schema, with interface for deferred Item class..." alt="" coords="5,155,112,181"/>
+<area shape="rect" id="node4" href="$class_express___entity.html" title="Implements ENTITY item of the EXPRESS schema, with interface for deferred Item class. " alt="" coords="137,155,247,181"/>
+<area shape="rect" id="node5" href="$class_express___enum.html" title="Implements TYPE ENUMERATION item of the EXPRESS schema, with interface for deferred Item class..." alt="" coords="271,155,382,181"/>
+<area shape="rect" id="node6" href="$class_express___reference.html" title="Implements REFERENCE FROM (list of types used from other schema) item of the EXPRESS schema..." alt="" coords="406,155,541,181"/>
+<area shape="rect" id="node7" href="$class_express___select.html" title="Implements TYPE SELECT item of the EXPRESS schema, with interface for deferred Item class..." alt="" coords="565,155,680,181"/>
+<area shape="rect" id="node2" href="$class_standard___transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy. " alt="" coords="259,5,394,32"/>
+</map>

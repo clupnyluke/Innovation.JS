@@ -1,0 +1,4 @@
+<map id="IGESCAFControl_ConfigurationNode" name="IGESCAFControl_ConfigurationNode">
+<area shape="rect" id="node2" href="$class_d_e___configuration_node.html" title="Base class to work with CAD transfer properties. Stores the necessary settings for a single Provider ..." alt="" coords="45,80,197,107"/>
+<area shape="rect" id="node3" href="$class_standard___transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy. " alt="" coords="54,5,189,32"/>
+</map>

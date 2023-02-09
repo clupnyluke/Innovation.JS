@@ -1,0 +1,7 @@
+<map id="BRepMesh_NURBSRangeSplitter" name="BRepMesh_NURBSRangeSplitter">
+<area shape="rect" id="node4" href="$class_b_rep_mesh___boundary_params_range_splitter.html" title="Auxiliary class extending UV range splitter in order to generate internal nodes for NURBS surface..." alt="" coords="803,5,1033,47"/>
+<area shape="rect" id="node5" href="$class_b_rep_mesh___extrusion_range_splitter.html" title="Auxiliary class analysing extrusion surface in order to generate internal nodes. " alt="" coords="805,71,1031,98"/>
+<area shape="rect" id="node6" href="$class_b_rep_mesh___undefined_range_splitter.html" title="Auxiliary class provides safe value for surfaces that looks like NURBS but has no poles or other char..." alt="" coords="804,122,1032,149"/>
+<area shape="rect" id="node2" href="$class_b_rep_mesh___u_v_param_range_splitter.html" title="Intended to generate internal mesh nodes using UV parameters of boundary discrete points..." alt="" coords="264,71,491,98"/>
+<area shape="rect" id="node3" href="$class_b_rep_mesh___default_range_splitter.html" title="Default tool to define range of discrete face model and obtain grid points distributed within this ra..." alt="" coords="5,71,216,98"/>
+</map>

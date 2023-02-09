@@ -1,0 +1,100 @@
+<map id="StepGeom_GeometricRepresentationItem" name="StepGeom_GeometricRepresentationItem">
+<area shape="rect" id="node4" href="$class_step_f_e_a___node_set.html" title="Representation of STEP entity NodeSet. " alt="" coords="791,95,923,122"/>
+<area shape="rect" id="node5" href="$class_step_geom___cartesian_transformation_operator.html" title="StepGeom_CartesianTransformation\lOperator" alt="" coords="741,147,972,188"/>
+<area shape="rect" id="node8" href="$class_step_geom___curve.html" title="StepGeom_Curve" alt="" coords="795,314,918,341"/>
+<area shape="rect" id="node16" href="$class_step_geom___direction.html" title="StepGeom_Direction" alt="" coords="785,542,928,569"/>
+<area shape="rect" id="node17" href="$class_step_geom___placement.html" title="StepGeom_Placement" alt="" coords="780,593,933,619"/>
+<area shape="rect" id="node21" href="$class_step_geom___point.html" title="StepGeom_Point" alt="" coords="796,795,917,822"/>
+<area shape="rect" id="node28" href="$class_step_geom___su_parameters.html" title="Representation of STEP entity SuParameters. " alt="" coords="769,1074,944,1101"/>
+<area shape="rect" id="node29" href="$class_step_geom___surface.html" title="StepGeom_Surface" alt="" coords="789,1125,924,1151"/>
+<area shape="rect" id="node36" href="$class_step_geom___vector.html" title="StepGeom_Vector" alt="" coords="792,1383,921,1410"/>
+<area shape="rect" id="node37" href="$class_step_kinematics___kinematic_pair.html" title="Representation of STEP entity KinematicPair. " alt="" coords="755,1434,958,1461"/>
+<area shape="rect" id="node43" href="$class_step_kinematics___pair_representation_relationship.html" title="Representation of STEP entity PairRepresentationRelationship. " alt="" coords="741,2008,972,2049"/>
+<area shape="rect" id="node44" href="$class_step_kinematics___pair_value.html" title="Representation of STEP entity PairValue. " alt="" coords="768,2074,945,2101"/>
+<area shape="rect" id="node62" href="$class_step_kinematics___rotation_about_direction.html" title="Representation of STEP entity RotationAboutDirection. " alt="" coords="755,2125,958,2167"/>
+<area shape="rect" id="node63" href="$class_step_shape___block.html" title="StepShape_Block" alt="" coords="793,2191,920,2218"/>
+<area shape="rect" id="node64" href="$class_step_shape___boolean_result.html" title="StepShape_BooleanResult" alt="" coords="768,2242,945,2269"/>
+<area shape="rect" id="node65" href="$class_step_shape___edge_based_wireframe_model.html" title="Representation of STEP entity EdgeBasedWireframeModel. " alt="" coords="747,2293,966,2335"/>
+<area shape="rect" id="node66" href="$class_step_shape___face_based_surface_model.html" title="Representation of STEP entity FaceBasedSurfaceModel. " alt="" coords="755,2359,958,2400"/>
+<area shape="rect" id="node67" href="$class_step_shape___geometric_set.html" title="StepShape_GeometricSet" alt="" coords="770,2425,943,2451"/>
+<area shape="rect" id="node69" href="$class_step_shape___half_space_solid.html" title="StepShape_HalfSpaceSolid" alt="" coords="766,2475,947,2502"/>
+<area shape="rect" id="node71" href="$class_step_shape___right_angular_wedge.html" title="StepShape_RightAngularWedge" alt="" coords="753,2526,961,2553"/>
+<area shape="rect" id="node72" href="$class_step_shape___right_circular_cone.html" title="StepShape_RightCircularCone" alt="" coords="758,2577,955,2603"/>
+<area shape="rect" id="node73" href="$class_step_shape___right_circular_cylinder.html" title="StepShape_RightCircularCylinder" alt="" coords="749,2627,964,2654"/>
+<area shape="rect" id="node74" href="$class_step_shape___shell_based_surface_model.html" title="StepShape_ShellBasedSurface\lModel" alt="" coords="755,2679,958,2720"/>
+<area shape="rect" id="node75" href="$class_step_shape___solid_model.html" title="StepShape_SolidModel" alt="" coords="778,2745,935,2771"/>
+<area shape="rect" id="node81" href="$class_step_shape___sphere.html" title="StepShape_Sphere" alt="" coords="789,2795,924,2822"/>
+<area shape="rect" id="node82" href="$class_step_shape___torus.html" title="StepShape_Torus" alt="" coords="794,2846,919,2873"/>
+<area shape="rect" id="node83" href="$class_step_visual___camera_model.html" title="StepVisual_CameraModel" alt="" coords="771,2897,943,2923"/>
+<area shape="rect" id="node86" href="$class_step_visual___camera_model_d3_multi_clipping_intersection.html" title="StepVisual_CameraModelD3\lMultiClippingIntersection" alt="" coords="763,2948,951,2989"/>
+<area shape="rect" id="node87" href="$class_step_visual___camera_model_d3_multi_clipping_union.html" title="StepVisual_CameraModelD3\lMultiClippingUnion" alt="" coords="763,3013,951,3055"/>
+<area shape="rect" id="node88" href="$class_step_visual___composite_text.html" title="StepVisual_CompositeText" alt="" coords="767,3079,946,3106"/>
+<area shape="rect" id="node90" href="$class_step_visual___draughting_callout.html" title="StepVisual_DraughtingCallout" alt="" coords="759,3130,954,3157"/>
+<area shape="rect" id="node91" href="$class_step_visual___planar_extent.html" title="StepVisual_PlanarExtent" alt="" coords="773,3181,940,3207"/>
+<area shape="rect" id="node93" href="$class_step_visual___tessellated_item.html" title="StepVisual_TessellatedItem" alt="" coords="765,3273,948,3299"/>
+<area shape="rect" id="node99" href="$class_step_visual___text_literal.html" title="StepVisual_TextLiteral" alt="" coords="781,3323,933,3350"/>
+<area shape="rect" id="node2" href="$class_step_repr___representation_item.html" title="StepRepr_RepresentationItem" alt="" coords="188,2395,383,2422"/>
+<area shape="rect" id="node3" href="$class_standard___transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy. " alt="" coords="5,2395,140,2422"/>
+<area shape="rect" id="node6" href="$class_step_geom___cartesian_transformation_operator2d.html" title="Added from StepGeom Rev2 to Rev4. " alt="" coords="1034,5,1265,47"/>
+<area shape="rect" id="node7" href="$class_step_geom___cartesian_transformation_operator3d.html" title="StepGeom_CartesianTransformation\lOperator3d" alt="" coords="1034,71,1265,112"/>
+<area shape="rect" id="node9" href="$class_step_geom___bounded_curve.html" title="StepGeom_BoundedCurve" alt="" coords="1062,137,1237,163"/>
+<area shape="rect" id="node10" href="$class_step_geom___conic.html" title="StepGeom_Conic" alt="" coords="1087,187,1211,214"/>
+<area shape="rect" id="node11" href="$class_step_geom___curve_replica.html" title="StepGeom_CurveReplica" alt="" coords="1066,238,1233,265"/>
+<area shape="rect" id="node12" href="$class_step_geom___line.html" title="StepGeom_Line" alt="" coords="1092,289,1207,315"/>
+<area shape="rect" id="node13" href="$class_step_geom___offset_curve3d.html" title="StepGeom_OffsetCurve3d" alt="" coords="1064,339,1235,366"/>
+<area shape="rect" id="node14" href="$class_step_geom___pcurve.html" title="StepGeom_Pcurve" alt="" coords="1084,390,1215,417"/>
+<area shape="rect" id="node15" href="$class_step_geom___surface_curve.html" title="StepGeom_SurfaceCurve" alt="" coords="1066,441,1233,467"/>
+<area shape="rect" id="node18" href="$class_step_geom___axis1_placement.html" title="StepGeom_Axis1Placement" alt="" coords="1056,491,1243,518"/>
+<area shape="rect" id="node19" href="$class_step_geom___axis2_placement2d.html" title="StepGeom_Axis2Placement2d" alt="" coords="1049,542,1249,569"/>
+<area shape="rect" id="node20" href="$class_step_geom___axis2_placement3d.html" title="StepGeom_Axis2Placement3d" alt="" coords="1049,593,1249,619"/>
+<area shape="rect" id="node22" href="$class_step_f_e_a___fea_parametric_point.html" title="Representation of STEP entity FeaParametricPoint. " alt="" coords="1051,643,1248,670"/>
+<area shape="rect" id="node23" href="$class_step_geom___cartesian_point.html" title="StepGeom_CartesianPoint" alt="" coords="1061,694,1237,721"/>
+<area shape="rect" id="node24" href="$class_step_geom___degenerate_pcurve.html" title="StepGeom_DegeneratePcurve" alt="" coords="1051,745,1247,771"/>
+<area shape="rect" id="node25" href="$class_step_geom___point_on_curve.html" title="StepGeom_PointOnCurve" alt="" coords="1064,795,1235,822"/>
+<area shape="rect" id="node26" href="$class_step_geom___point_on_surface.html" title="StepGeom_PointOnSurface" alt="" coords="1058,846,1241,873"/>
+<area shape="rect" id="node27" href="$class_step_geom___point_replica.html" title="StepGeom_PointReplica" alt="" coords="1067,897,1231,923"/>
+<area shape="rect" id="node30" href="$class_step_geom___bounded_surface.html" title="StepGeom_BoundedSurface" alt="" coords="1056,947,1243,974"/>
+<area shape="rect" id="node31" href="$class_step_geom___elementary_surface.html" title="StepGeom_ElementarySurface" alt="" coords="1049,998,1250,1025"/>
+<area shape="rect" id="node32" href="$class_step_geom___offset_surface.html" title="StepGeom_OffsetSurface" alt="" coords="1065,1049,1234,1075"/>
+<area shape="rect" id="node33" href="$class_step_geom___oriented_surface.html" title="Representation of STEP entity OrientedSurface. " alt="" coords="1057,1099,1241,1126"/>
+<area shape="rect" id="node34" href="$class_step_geom___surface_replica.html" title="StepGeom_SurfaceReplica" alt="" coords="1060,1150,1239,1177"/>
+<area shape="rect" id="node35" href="$class_step_geom___swept_surface.html" title="StepGeom_SweptSurface" alt="" coords="1064,1201,1235,1227"/>
+<area shape="rect" id="node38" href="$class_step_kinematics___actuated_kinematic_pair.html" title="Representation of STEP entity ActuatedKinematicPair. " alt="" coords="1022,1251,1277,1278"/>
+<area shape="rect" id="node39" href="$class_step_kinematics___actuated_kin_pair_and_order_kin_pair.html" title="Representation of STEP entity ActuatedKinPairAndOrderKinPair. " alt="" coords="1053,1303,1245,1344"/>
+<area shape="rect" id="node40" href="$class_step_kinematics___high_order_kinematic_pair.html" title="Representation of STEP entity HighOrderKinematicPair. " alt="" coords="1060,1368,1239,1409"/>
+<area shape="rect" id="node41" href="$class_step_kinematics___low_order_kinematic_pair.html" title="Representation of STEP entity LowOrderKinematicPair. " alt="" coords="1021,1434,1278,1461"/>
+<area shape="rect" id="node42" href="$class_step_kinematics___low_order_kinematic_pair_with_motion_coupling.html" title="Representation of STEP entity LowOrderKinematicPairWithMotionCoupling. " alt="" coords="1032,1485,1267,1527"/>
+<area shape="rect" id="node45" href="$class_step_kinematics___cylindrical_pair_value.html" title="Representation of STEP entity CylindricalPairValue. " alt="" coords="1059,1551,1240,1592"/>
+<area shape="rect" id="node46" href="$class_step_kinematics___gear_pair_value.html" title="Representation of STEP entity GearPairValue. " alt="" coords="1047,1617,1252,1643"/>
+<area shape="rect" id="node47" href="$class_step_kinematics___low_order_kinematic_pair_value.html" title="Representation of STEP entity LowOrderKinematicPairValue. " alt="" coords="1032,1668,1267,1709"/>
+<area shape="rect" id="node48" href="$class_step_kinematics___planar_pair_value.html" title="Representation of STEP entity PlanarPairValue. " alt="" coords="1059,1733,1240,1775"/>
+<area shape="rect" id="node49" href="$class_step_kinematics___point_on_planar_curve_pair_value.html" title="Representation of STEP entity PointOnPlanarCurvePairValue. " alt="" coords="1047,1799,1252,1840"/>
+<area shape="rect" id="node50" href="$class_step_kinematics___point_on_surface_pair_value.html" title="Representation of STEP entity PointOnSurfacePairValue. " alt="" coords="1043,1864,1255,1905"/>
+<area shape="rect" id="node51" href="$class_step_kinematics___prismatic_pair_value.html" title="Representation of STEP entity PrismaticPairValue. " alt="" coords="1061,1929,1237,1971"/>
+<area shape="rect" id="node52" href="$class_step_kinematics___rack_and_pinion_pair_value.html" title="Representation of STEP entity RackAndPinionPairValue. " alt="" coords="1044,1995,1255,2036"/>
+<area shape="rect" id="node53" href="$class_step_kinematics___revolute_pair_value.html" title="Representation of STEP entity RevolutePairValue. " alt="" coords="1053,2060,1246,2101"/>
+<area shape="rect" id="node54" href="$class_step_kinematics___rolling_curve_pair_value.html" title="Representation of STEP entity RollingCurvePairValue. " alt="" coords="1053,2125,1245,2167"/>
+<area shape="rect" id="node55" href="$class_step_kinematics___rolling_surface_pair_value.html" title="Representation of STEP entity RollingSurfacePairValue. " alt="" coords="1047,2191,1251,2232"/>
+<area shape="rect" id="node56" href="$class_step_kinematics___screw_pair_value.html" title="Representation of STEP entity ScrewPairValue. " alt="" coords="1059,2256,1239,2297"/>
+<area shape="rect" id="node57" href="$class_step_kinematics___sliding_curve_pair_value.html" title="Representation of STEP entity SlidingCurvePairValue. " alt="" coords="1053,2321,1245,2363"/>
+<area shape="rect" id="node58" href="$class_step_kinematics___sliding_surface_pair_value.html" title="Representation of STEP entity SlidingSurfacePairValue. " alt="" coords="1047,2387,1251,2428"/>
+<area shape="rect" id="node59" href="$class_step_kinematics___spherical_pair_value.html" title="Representation of STEP entity SphericalPairValue. " alt="" coords="1062,2452,1237,2493"/>
+<area shape="rect" id="node60" href="$class_step_kinematics___unconstrained_pair_value.html" title="Representation of STEP entity UnconstrainedPairValue. " alt="" coords="1047,2517,1251,2559"/>
+<area shape="rect" id="node61" href="$class_step_kinematics___universal_pair_value.html" title="Representation of STEP entity UniversalPairValue. " alt="" coords="1063,2583,1236,2624"/>
+<area shape="rect" id="node68" href="$class_step_shape___geometric_curve_set.html" title="StepShape_GeometricCurveSet" alt="" coords="1047,2649,1252,2675"/>
+<area shape="rect" id="node70" href="$class_step_shape___boxed_half_space.html" title="StepShape_BoxedHalfSpace" alt="" coords="1055,2699,1244,2726"/>
+<area shape="rect" id="node76" href="$class_step_shape___csg_solid.html" title="StepShape_CsgSolid" alt="" coords="1077,2750,1222,2777"/>
+<area shape="rect" id="node77" href="$class_step_shape___manifold_solid_brep.html" title="StepShape_ManifoldSolidBrep" alt="" coords="1051,2801,1248,2827"/>
+<area shape="rect" id="node78" href="$class_step_shape___solid_replica.html" title="StepShape_SolidReplica" alt="" coords="1067,2851,1232,2878"/>
+<area shape="rect" id="node79" href="$class_step_shape___swept_area_solid.html" title="StepShape_SweptAreaSolid" alt="" coords="1057,2902,1242,2929"/>
+<area shape="rect" id="node80" href="$class_step_shape___swept_face_solid.html" title="StepShape_SweptFaceSolid" alt="" coords="1056,2953,1243,2979"/>
+<area shape="rect" id="node84" href="$class_step_visual___camera_model_d2.html" title="StepVisual_CameraModelD2" alt="" coords="1055,3003,1243,3030"/>
+<area shape="rect" id="node85" href="$class_step_visual___camera_model_d3.html" title="StepVisual_CameraModelD3" alt="" coords="1055,3054,1243,3081"/>
+<area shape="rect" id="node89" href="$class_step_visual___composite_text_with_extent.html" title="StepVisual_CompositeText\lWithExtent" alt="" coords="1060,3105,1239,3147"/>
+<area shape="rect" id="node92" href="$class_step_visual___planar_box.html" title="StepVisual_PlanarBox" alt="" coords="1073,3171,1225,3198"/>
+<area shape="rect" id="node94" href="$class_step_visual___coordinates_list.html" title="StepVisual_CoordinatesList" alt="" coords="1058,3222,1241,3249"/>
+<area shape="rect" id="node95" href="$class_step_visual___repositioned_tessellated_item.html" title="Representation of STEP entity RepositionedTessellatedItem. " alt="" coords="1020,3273,1279,3299"/>
+<area shape="rect" id="node96" href="$class_step_visual___tessellated_curve_set.html" title="StepVisual_TessellatedCurveSet" alt="" coords="1044,3323,1255,3350"/>
+<area shape="rect" id="node97" href="$class_step_visual___tessellated_geometric_set.html" title="StepVisual_TessellatedGeometricSet" alt="" coords="1030,3374,1269,3401"/>
+<area shape="rect" id="node98" href="$class_step_visual___tessellated_point_set.html" title="Representation of STEP entity TessellatedPointSet. " alt="" coords="1045,3425,1253,3451"/>
+</map>

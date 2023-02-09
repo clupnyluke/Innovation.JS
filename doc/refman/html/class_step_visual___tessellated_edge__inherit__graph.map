@@ -1,0 +1,9 @@
+<map id="StepVisual_TessellatedEdge" name="StepVisual_TessellatedEdge">
+<area shape="rect" id="node7" href="$class_step_visual___cubic_bezier_tessellated_edge.html" title="Representation of STEP entity CubicBezierTessellatedEdge. " alt="" coords="5,453,264,480"/>
+<area shape="rect" id="node8" href="$class_step_visual___tessellated_connecting_edge.html" title="Representation of STEP entity TessellatedConnectingEdge. " alt="" coords="288,453,541,480"/>
+<area shape="rect" id="node2" href="$class_step_visual___tessellated_structured_item.html" title="Representation of STEP entity TessellatedStructuredItem. " alt="" coords="153,304,396,331"/>
+<area shape="rect" id="node3" href="$class_step_visual___tessellated_item.html" title="StepVisual_TessellatedItem" alt="" coords="183,229,366,256"/>
+<area shape="rect" id="node4" href="$class_step_geom___geometric_representation_item.html" title="StepGeom_GeometricRepresentationItem" alt="" coords="143,155,406,181"/>
+<area shape="rect" id="node5" href="$class_step_repr___representation_item.html" title="StepRepr_RepresentationItem" alt="" coords="177,80,372,107"/>
+<area shape="rect" id="node6" href="$class_standard___transient.html" title="Abstract class which forms the root of the entire Transient class hierarchy. " alt="" coords="207,5,342,32"/>
+</map>
