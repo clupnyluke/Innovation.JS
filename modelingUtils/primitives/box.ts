@@ -4,7 +4,7 @@ import ax2 from '../oc_core/ax2';
 
 type OptionalVec = [number, number, number] | [number, number] | [number] | number;
 
-const rectangularPrism = (
+const box = (
 	oc: OpenCascadeInstance,
 	opts?: {
 		size?: OptionalVec;
@@ -24,4 +24,4 @@ const rectangularPrism = (
 	).Shape();
 };
 
-export default rectangularPrism;
+export default box;
