@@ -1,4 +1,5 @@
 import type { OpenCascadeInstance, TopoDS_Shape } from 'opencascade.js';
+import xCafDocMaterialHandle from './XCafDocMaterialHandle';
 
 // Takes a TDocStd_Document, creates a GLB file from it and returns a ObjectURL
 export const solidsToGLB = async (
@@ -14,13 +15,12 @@ export const solidsToGLB = async (
 	const shapeTool = oc.XCAFDoc_DocumentTool.ShapeTool(doc.Main()).get();
 	// const colorTool = oc.XCAFDoc_DocumentTool.ColorTool(doc.Main()).get();
 	const matTool = oc.XCAFDoc_DocumentTool.VisMaterialTool(doc.Main()).get();
-	const mat = new oc.XCAFDoc_VisMaterial();
-	const mat_pbr = new oc.XCAFDoc_VisMaterialPBR();
-	mat_pbr.BaseColor = new oc.Quantity_ColorRGBA_5(1, 0, 0, 1);
-	mat_pbr.Metallic = 0.75;
-	mat_pbr.Roughness = 0.8;
-	mat.SetPbrMaterial(mat_pbr);
-	const mat_handle = new oc.Handle_XCAFDoc_VisMaterial_2(mat);
+	const mat_handle = xCafDocMaterialHandle(oc, {
+		color: [1, 0.2431, 0],
+		metallic: 0.75,
+		roughness: 0.8
+	});
+	//const mat_handle = new oc.Handle_XCAFDoc_VisMaterial_2(mat);
 	const mat_label = matTool.AddMaterial_1(
 		mat_handle,
 		new oc.TCollection_AsciiString_2('Default Material')
