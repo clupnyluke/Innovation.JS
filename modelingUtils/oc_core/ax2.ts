@@ -8,7 +8,7 @@ const ax2 = (
 ) => {
 	const _opts = { ...opts };
 	const { origin, direction } = _opts;
-	return new oc.gp_Ax2_3(pnt(oc, { coords: origin }), dir(oc, { direction }));
+	return new oc.gp_Ax2_3(pnt(oc, { pnt: origin }), dir(oc, { direction }));
 };
 
 export default ax2;
