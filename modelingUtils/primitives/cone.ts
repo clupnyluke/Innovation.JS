@@ -28,3 +28,5 @@ const cone = (
 	const axes = ax2(oc, { origin, direction: zDirection });
 	return new oc.BRepPrimAPI_MakeCone_4(axes, r1, r2, height, angle).Shape();
 };
+
+export default cone;

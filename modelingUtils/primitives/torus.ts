@@ -29,3 +29,5 @@ const torus = (
 	const axes = ax2(oc, { origin, direction: zDirection });
 	return new oc.BRepPrimAPI_MakeTorus_6(axes, outerRadius, innerRadius, angle).Shape();
 };
+
+export default torus;
