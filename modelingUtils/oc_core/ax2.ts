@@ -1,14 +1,12 @@
-import type { OpenCascadeInstance } from 'opencascade.js';
-import pnt from './pnt';
-import dir from './dir';
+import oc from '@modeling/oc';
+import { pnt, dir } from '@modeling/oc_core';
 
 const ax2 = (
-	oc: OpenCascadeInstance,
-	opts?: { direction?: [number, number, number]; origin?: [number, number, number] }
+  opts?: { direction?: [number, number, number]; origin?: [number, number, number] }
 ) => {
-	const _opts = { ...opts };
-	const { origin, direction } = _opts;
-	return new oc.gp_Ax2_3(pnt(oc, { pnt: origin }), dir(oc, { direction }));
+  const _opts = { ...opts };
+  const { origin, direction } = _opts;
+  return new oc.gp_Ax2_3(pnt({ pnt: origin }), dir(oc, { direction }));
 };
 
 export default ax2;
