@@ -24,13 +24,12 @@
 	listen(socket, 'updateModel', async ({ path: _path, module: codeExec }) => {
 		if (path === _path) {
 			(0, eval)(codeExec);
-			modelFn = module[path].default;
+			modelFn = module[path].default ?? module[path].main;
 		}
 	});
 
 	listen(socket, 'modelUpdated', async (_path) => {
-		console.log(path, _path);
-		if (path === _path) {
+		if (path === _path || path === '__ALL__') {
 			emit(socket, 'requestModel', path);
 		}
 	});
@@ -39,4 +38,4 @@
 </script>
 
 <slot />
-<Renderer {shapes} />
+<Renderer {shapes} fileName={path.substring(path.lastIndexOf('/') + 1)} />
