@@ -6,8 +6,10 @@
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
+    "moduleResolution": "node",
     "sourceMap": true,
     "strict": false,
+    "target": "ESNext",
     "paths": {
       "@modeling/*": [
         "./*"

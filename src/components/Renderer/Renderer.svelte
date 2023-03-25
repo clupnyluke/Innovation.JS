@@ -7,6 +7,7 @@
 	import { solidsToGLB } from '@Utils/solidsToGLB';
 	import { GLTF } from '@threlte/extras';
 	import { merge } from 'lodash';
+	import download from '@Utils/download';
 
 	const _opts = {
 		backgroundColor: '#333'
@@ -16,6 +17,7 @@
 	export let settings: Partial<typeof _opts> = _opts;
 	const opts = merge(_opts, settings);
 	const { backgroundColor } = opts;
+	export let fileName;
 
 	let glbURL: Promise<string> = new Promise(() => null);
 
@@ -28,6 +30,12 @@
 		target = { x: 0, y: 0.5 };
 	};
 </script>
+
+<svelte:window
+	on:keypress={async ({ key }) => {
+		if (key === 'd') download(fileName, { url: await glbURL });
+	}}
+/>
 
 <div class="jscad-renderer" style={`background-color: ${backgroundColor};`}>
 	<Canvas>
