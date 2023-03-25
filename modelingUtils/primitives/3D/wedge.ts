@@ -1,10 +1,11 @@
-import oc from '@modeling/oc';
 import merge from 'lodash/merge';
 import { rotate } from '@modeling/transform';
 import { TAU } from '@modeling/constants';
 import { ax2 } from '@modeling/oc_core';
+import type { OpenCascadeInstance } from 'opencascade.js';
 
 const wedge = (
+  oc: OpenCascadeInstance,
   opts?: {
     base?: [number, number];
     top?: [number, number];
@@ -33,9 +34,9 @@ const wedge = (
   const tmp = origin[2];
   origin[2] = origin[1];
   origin[1] = tmp;
-  return rotate(
+  return rotate(oc,
     new oc.BRepPrimAPI_MakeWedge_4(
-      ax2({ direction: zDirection, origin }),
+      ax2(oc, { direction: zDirection, origin }),
       x,
       height,
       y,
