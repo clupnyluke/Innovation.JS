@@ -1,7 +1,7 @@
-import oc from '@modeling/oc';
 import merge from 'lodash/merge';
+import type { OpenCascadeInstance } from 'opencascade.js';
 
-const dir = (opts?: { direction?: [number, number, number] }) => {
+const dir = (oc: OpenCascadeInstance, opts?: { direction?: [number, number, number] }) => {
   const _opts = merge({ direction: [0, 0, 1] }, opts);
   const { direction } = _opts;
   const [x, y, z] = direction;
