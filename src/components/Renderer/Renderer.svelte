@@ -21,7 +21,7 @@
 
 	let glbURL: Promise<string> = new Promise(() => null);
 
-	$: glbURL = solidsToGLB($opencascade, shapes);
+	$: glbURL = solidsToGLB($opencascade, shapes).then((r) => r.url);
 	Object3D.DefaultUp.set(0, 0, 1);
 	let axes: AxesHelper;
 	$: if (axes) axes.setColors(new Color(0xff0000), new Color(0x00ff00), new Color(0x0000ff));
