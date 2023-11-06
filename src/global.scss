@@ -1,0 +1,27 @@
+.smui-accordion__panel.smui-accordion__panel--open > .design-list.smui-paper__content {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.design-list {
+	.mdc-deprecated-list {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	padding-left: 16px;
+	.header-seperator {
+		border-bottom-color: #ff3e00;
+	}
+	.list-seperator {
+		//border-bottom-color: color-palette.$grey-200;
+	}
+}
+
+.smui-accordion .smui-accordion__panel.smui-accordion__panel--open {
+	margin: 0;
+}
+
+.smui-accordion .smui-accordion__panel > .smui-accordion__header .smui-accordion__header__title {
+	padding: 0;
+	margin: 1rem;
+}

@@ -1,5 +1,3 @@
-import animationFns from './animationFns';
+export { default as animationFns } from './animationFns';
 //import { cameraController, cameraControllerSettings } from './cameraController';
-import opencascade from './opencascade';
-
-export { animationFns, /*cameraController, cameraControllerSettings,*/ opencascade };
+export { default as opencascade } from './opencascade';

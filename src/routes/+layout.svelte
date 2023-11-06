@@ -11,7 +11,7 @@
 	import { io } from 'socket.io-client';
 	import { writable } from 'svelte/store';
 	import type NavEntry from '@Src/common/NavEntry';
-	import { browser } from '$app/environment';
+	import '../global.scss';
 
 	const socket = io();
 
@@ -49,11 +49,10 @@
 				>
 					<Drawer variant="dismissible" bind:open={isNavMenuOpen}>
 						<Header>
-							<Title class="drawer-title">Projects</Title>
 							<Content>
 								<Accordion multiple={true}>
 									{#if $nav}
-										<ProjectPanel entry={$nav} path='' base='project' />
+										<ProjectPanel entry={$nav} path="" base="project" />
 									{/if}
 								</Accordion>
 							</Content>

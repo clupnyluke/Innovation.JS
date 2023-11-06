@@ -8,7 +8,9 @@ const serverBuildNav = async (path: string, name: string) => {
 		files: [],
 		folders: []
 	};
+
 	const entries = await fs.readdir(path, { withFileTypes: true });
+
 	for (const entry of entries) {
 		const { name } = entry;
 		if (entry.isFile()) {
