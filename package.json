@@ -48,6 +48,7 @@
 		"smui-theme": "7.0.0-beta.0",
 		"svelte": "^3.54.0",
 		"svelte-check": "^2.9.2",
+		"svelte-google-materialdesign-icons": "^0.7.1",
 		"svelte-sequential-preprocessor": "^0.0.7",
 		"three": "^0.147.0",
 		"tslib": "^2.4.1",
