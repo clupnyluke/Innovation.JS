@@ -8,6 +8,7 @@
 	import { GLTF } from '@threlte/extras';
 	import { merge } from 'lodash';
 	import download from '@Utils/download';
+	import { solidsToSTL } from '@Utils/solidsToSTL';
 
 	const _opts = {
 		backgroundColor: '#333'
@@ -33,7 +34,8 @@
 
 <svelte:window
 	on:keypress={async ({ key }) => {
-		if (key === 'd') download(fileName, { url: await glbURL });
+		if (key === 'd')
+			download(fileName + '.stl', { url: (await solidsToSTL($opencascade, shapes)).url });
 	}}
 />
 
