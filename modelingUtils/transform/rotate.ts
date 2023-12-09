@@ -1,6 +1,6 @@
 import { ax1 } from '../oc_core';
 import type { OpenCascadeInstance, TopoDS_Shape } from 'opencascade.js';
-import { merge } from 'lodash';
+import merge from 'lodash/merge';
 const rotate = (
 	oc: OpenCascadeInstance,
 	shape: TopoDS_Shape,
