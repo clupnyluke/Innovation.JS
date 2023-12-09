@@ -1,6 +1,5 @@
-import { partition } from 'lodash';
+import partition from 'lodash/partition';
 import type { OpenCascadeInstance, TopoDS_Shape } from 'opencascade.js';
-import xCafDocMaterialHandle from './XCafDocMaterialHandle';
 
 export const solidsToSTL = async (
 	ocjs: Promise<OpenCascadeInstance>,
@@ -33,8 +32,6 @@ export const solidsToSTL = async (
 	for (const s of shapes) {
 		writer.Write(s, file, new oc.Message_ProgressRange_1());
 	}
-	const stlFile = oc.FS.readFile(file);
-	const url = URL.createObjectURL(new Blob([stlFile.buffer], { type: 'model/stl-binary' }));
 
-	return { url };
+	return oc.FS.readFile(file).buffer;
 };

@@ -1,16 +1,15 @@
-import { partition } from 'lodash';
+import partition from 'lodash/partition';
 import type { OpenCascadeInstance, TopoDS_Shape } from 'opencascade.js';
 import xCafDocMaterialHandle from './XCafDocMaterialHandle';
 
 // Takes a TDocStd_Document, creates a GLB file from it and returns a ObjectURL
-export const solidsToGLB = async (
-	ocjs: Promise<OpenCascadeInstance>,
-	solids: Promise<TopoDS_Shape | TopoDS_Shape[]>,
+export const solidsToGLB = (
+	oc: OpenCascadeInstance,
+	solids: TopoDS_Shape | TopoDS_Shape[],
 	options?: { fileName?: string }
 ) => {
 	const file = `./${options?.fileName ?? 'file'}.glb`;
-	const oc = await ocjs;
-	const _shapes = await solids;
+	const _shapes = solids;
 	let shapes = Array.isArray(_shapes) ? _shapes : [_shapes];
 	let wires = [];
 	const doc = new oc.TDocStd_Document(new oc.TCollection_ExtendedString_1());
@@ -56,6 +55,5 @@ export const solidsToGLB = async (
 
 	// Read the GLB file from the virtual file system
 	const glbFile = oc.FS.readFile(file, { encoding: 'binary' });
-	const url = URL.createObjectURL(new Blob([glbFile.buffer], { type: 'model/gltf-binary' }));
-	return { url, wires };
+	return { buffer: glbFile.buffer, wires };
 };
