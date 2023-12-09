@@ -16,15 +16,18 @@
 		emit(socket, 'requestModel', path);
 	});
 
-	let modelFn: (oc: Promise<OpenCascadeInstance>) => Promise<TopoDS_Shape | TopoDS_Shape[]> = () =>
-		new Promise(() => null);
+	//let modelFn: (oc: Promise<OpenCascadeInstance>) => Promise<TopoDS_Shape | TopoDS_Shape[]> = () =>
+	//	new Promise(() => null);
 
-	let shapes: Promise<TopoDS_Shape | TopoDS_Shape[]> = new Promise(() => null);
+	// let shapes: Promise<TopoDS_Shape | TopoDS_Shape[]> = new Promise(() => null);
+
+	let modelCode;
 
 	listen(socket, 'updateModel', async ({ path: _path, module: codeExec }) => {
 		if (path === _path) {
-			(0, eval)(codeExec);
-			modelFn = module[path].default ?? module[path].main;
+			//	(0, eval)(codeExec);
+			//	modelFn = module[path].default ?? module[path].main;
+			modelCode = codeExec;
 		}
 	});
 
@@ -34,8 +37,8 @@
 		}
 	});
 
-	$: shapes = modelFn($opencascade);
+	// $: shapes = modelFn($opencascade);
 </script>
 
 <slot />
-<Renderer {shapes} fileName={path.substring(path.lastIndexOf('/') + 1)} />
+<Renderer {modelCode} {path} fileName={path.substring(path.lastIndexOf('/') + 1)} />

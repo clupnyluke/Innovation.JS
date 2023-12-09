@@ -6,23 +6,54 @@
 	import { opencascade } from '@Stores';
 	import { solidsToGLB } from '@Utils/solidsToGLB';
 	import { GLTF } from '@threlte/extras';
-	import { merge } from 'lodash';
+	import merge from 'lodash/merge';
 	import download from '@Utils/download';
 	import { solidsToSTL } from '@Utils/solidsToSTL';
+	import bufferToURL from '@Utils/bufferToURL';
+	import OCWorker from '../../OCWorker.ts?worker';
+	import { afterUpdate, onMount } from 'svelte';
 
 	const _opts = {
 		backgroundColor: '#333'
 	};
 
-	export let shapes: Promise<TopoDS_Shape | TopoDS_Shape[]>;
+	//export let shapes: Promise<TopoDS_Shape | TopoDS_Shape[]>;
+	export let modelCode;
+	export let path;
 	export let settings: Partial<typeof _opts> = _opts;
 	const opts = merge(_opts, settings);
 	const { backgroundColor } = opts;
 	export let fileName;
 
 	let glbURL: Promise<string> = new Promise(() => null);
+	let stlURL: Promise<string> = new Promise(() => null);
 
-	$: glbURL = solidsToGLB($opencascade, shapes).then((r) => r.url);
+	/*$: glbURL = solidsToGLB($opencascade, shapes).then((r) =>
+		bufferToURL(r.buffer, 'modeling/gltf-binary')
+	);*/
+
+	let ocw: Worker | undefined;
+
+	onMount(() => {
+		ocw = new OCWorker();
+
+		ocw.onmessage = (e) => {
+			switch (e.data[0]) {
+				default:
+					console.log(e.data);
+					break;
+				case 'glb':
+					glbURL = Promise.resolve(bufferToURL(e.data[1].buffer, 'model/gltf-binary'));
+					break;
+				case 'stl':
+					stlURL = Promise.resolve(bufferToURL(e.data[1].buffer, 'model/stl-binary'));
+					break;
+			}
+		};
+	});
+
+	$: ocw?.postMessage(['getGLB', { modelCode, path }]);
+
 	Object3D.DefaultUp.set(0, 0, 1);
 	let axes: AxesHelper;
 	$: if (axes) axes.setColors(new Color(0xff0000), new Color(0x00ff00), new Color(0x0000ff));
@@ -34,8 +65,11 @@
 
 <svelte:window
 	on:keypress={async ({ key }) => {
-		if (key === 'd')
-			download(fileName + '.stl', { url: (await solidsToSTL($opencascade, shapes)).url });
+		if (key === 'd') {
+			download(fileName + '.stl', {
+				url: await stlURL
+			});
+		}
 	}}
 />
 

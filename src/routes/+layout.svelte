@@ -6,7 +6,7 @@
 	import type { LayoutData, LayoutServerData } from './$types';
 	import ProjectPanel from '@Components/Layout/Nav/ProjectPanel.svelte';
 	import { onMount } from 'svelte';
-	import { opencascade } from '@Stores';
+	//import { opencascade } from '@Stores';
 	import { emit, listen } from '../common/socket';
 	import { io } from 'socket.io-client';
 	import { writable } from 'svelte/store';
@@ -20,7 +20,7 @@
 	export let data: LayoutData;
 	if (data.nav) $nav = data.nav;
 	onMount(() => {
-		opencascade.load();
+		//opencascade.load();
 		emit(socket, 'requestNavigation');
 	});
 	listen(socket, 'updateNavigation', (_nav) => {
