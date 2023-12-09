@@ -5,12 +5,11 @@ import xCafDocMaterialHandle from './XCafDocMaterialHandle';
 // Takes a TDocStd_Document, creates a GLB file from it and returns a ObjectURL
 export const solidsToGLB = (
 	oc: OpenCascadeInstance,
-	solids: TopoDS_Shape | TopoDS_Shape[],
+	shapes: TopoDS_Shape | TopoDS_Shape[],
 	options?: { fileName?: string }
 ) => {
 	const file = `./${options?.fileName ?? 'file'}.glb`;
-	const _shapes = solids;
-	let shapes = Array.isArray(_shapes) ? _shapes : [_shapes];
+	let _shapes = Array.isArray(shapes) ? shapes : [shapes];
 	let wires = [];
 	const doc = new oc.TDocStd_Document(new oc.TCollection_ExtendedString_1());
 	const shapeTool = oc.XCAFDoc_DocumentTool.ShapeTool(doc.Main()).get();
@@ -26,7 +25,7 @@ export const solidsToGLB = (
 		mat_handle,
 		new oc.TCollection_AsciiString_2('Default Material')
 	);
-	[shapes, wires] = partition(shapes, (s) => {
+	[_shapes, wires] = partition(_shapes, (s) => {
 		switch (s.ShapeType()) {
 			case oc.TopAbs_ShapeEnum.TopAbs_VERTEX:
 				return false;
@@ -38,7 +37,7 @@ export const solidsToGLB = (
 				return true;
 		}
 	});
-	for (const s of shapes) {
+	for (const s of _shapes) {
 		shapeTool.SetShape(shapeTool.NewShape(), s);
 		matTool.SetShapeMaterial_2(s, mat_label);
 		// Tell OpenCascade that we want our shape to get meshed

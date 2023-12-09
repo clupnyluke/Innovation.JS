@@ -1,18 +1,16 @@
 import partition from 'lodash/partition';
 import type { OpenCascadeInstance, TopoDS_Shape } from 'opencascade.js';
 
-export const solidsToSTL = async (
-	ocjs: Promise<OpenCascadeInstance>,
-	solids: Promise<TopoDS_Shape | TopoDS_Shape[]>,
+export const solidsToSTL = (
+	oc: OpenCascadeInstance,
+	shapes: TopoDS_Shape | TopoDS_Shape[],
 	options?: { fileName?: string }
 ) => {
 	const file = `${options?.fileName ?? 'file'}.stl`;
-	const oc = await ocjs;
-	const _shapes = await solids;
-	let shapes = Array.isArray(_shapes) ? _shapes : [_shapes];
+	let _shapes = Array.isArray(shapes) ? shapes : [shapes];
 
 	//const mat_handle = new oc.Handle_XCAFDoc_VisMaterial_2(mat);
-	[shapes] = partition(shapes, (s) => {
+	[_shapes] = partition(_shapes, (s) => {
 		switch (s.ShapeType()) {
 			case oc.TopAbs_ShapeEnum.TopAbs_SOLID:
 				return true;
@@ -29,7 +27,7 @@ export const solidsToSTL = async (
 	const mergeTool = new oc.Poly_MergeNodesTool(0, 0, -1);
 
 	const writer = new oc.StlAPI_Writer();
-	for (const s of shapes) {
+	for (const s of _shapes) {
 		writer.Write(s, file, new oc.Message_ProgressRange_1());
 	}
 
