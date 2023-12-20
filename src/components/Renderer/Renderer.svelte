@@ -28,10 +28,6 @@
 	let glbURL: Promise<string> = new Promise(() => null);
 	let stlURL: Promise<string> = new Promise(() => null);
 
-	/*$: glbURL = solidsToGLB($opencascade, shapes).then((r) =>
-		bufferToURL(r.buffer, 'modeling/gltf-binary')
-	);*/
-
 	let ocw: Worker | undefined;
 
 	onMount(() => {
@@ -42,17 +38,20 @@
 				default:
 					console.log(e.data);
 					break;
+				case 'modelProcessed':
+					ocw.postMessage(['getGLB']);
+					break;
 				case 'glb':
 					glbURL = Promise.resolve(bufferToURL(e.data[1].buffer, 'model/gltf-binary'));
 					break;
 				case 'stl':
-					stlURL = Promise.resolve(bufferToURL(e.data[1].buffer, 'model/stl-binary'));
+					stlURL = Promise.resolve(bufferToURL(e.data[1], 'model/stl-binary'));
 					break;
 			}
 		};
 	});
 
-	$: ocw?.postMessage(['getGLB', { modelCode, path }]);
+	$: ocw?.postMessage(['sendModel', { modelCode, path }]);
 
 	Object3D.DefaultUp.set(0, 0, 1);
 	let axes: AxesHelper;
@@ -66,6 +65,7 @@
 <svelte:window
 	on:keypress={async ({ key }) => {
 		if (key === 'd') {
+			ocw?.postMessage(['getSTL']);
 			download(fileName + '.stl', {
 				url: await stlURL
 			});
