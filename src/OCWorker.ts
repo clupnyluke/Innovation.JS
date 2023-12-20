@@ -1,4 +1,5 @@
 import { solidsToGLB } from '@Utils/solidsToGLB';
+import { solidsToSTL } from '@Utils/solidsToSTL';
 import initOpenCascade from 'opencascade.js';
 
 postMessage('OC Load Started');
@@ -8,21 +9,29 @@ const ocp = initOpenCascade().then((res) => {
 	return res;
 });
 
+let modelfn;
+let shapes;
 onmessage = async (e) => {
-	let modelfn;
 	let data;
-	let shapes;
 	switch (e.data[0]) {
 		default:
 			postMessage(e.data);
 			break;
+		case 'sendModel':
+			if (e.data[1].modelCode) {
+				(0, eval)(e.data[1].modelCode);
+				modelfn = module[e.data[1].path].default ?? module[e.data[1].path].main;
+				shapes = await modelfn(ocp);
+				postMessage(['modelProcessed']);
+			}
+			break;
 		case 'getGLB':
-			(0, eval)(e.data[1].modelCode);
-			modelfn = module[e.data[1].path].default ?? module[e.data[1].path].main;
-			data = solidsToGLB(await ocp, await modelfn(ocp));
+			data = solidsToGLB(await ocp, shapes);
 			postMessage(['glb', data]);
 			break;
 		case 'getSTL':
+			data = solidsToSTL(await ocp, shapes);
+			postMessage(['stl', data]);
 			break;
 	}
 };
