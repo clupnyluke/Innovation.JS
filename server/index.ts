@@ -10,9 +10,9 @@ const server = createServer(app);
 
 const io = new Server(server);
 
-io.on('connection', (socket) => {
+io.on('connection', (socket) => {}
 	socket.emit('eventFromServer', 'Hello, World 👋');
-});
+);
 
 // SvelteKit should handle everything else using Express middleware
 // https://github.com/sveltejs/kit/tree/master/packages/adapter-node#custom-server

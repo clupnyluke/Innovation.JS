@@ -1,1 +1,1 @@
-export { default as getPlaneOfFace } from './getFacePlane'
+export { default as getFacePlane } from './getFacePlane';

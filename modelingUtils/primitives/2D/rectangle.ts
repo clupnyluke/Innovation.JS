@@ -14,10 +14,10 @@ const rectangle = (
 	const [x, y] = Array.isArray(size) ? [...size, 1, 1] : [size, size];
 	const [a, b] = origin;
 	const points: [number, number, number][] = [
-		[a + x, b + y, 0],
-		[a - x, b + y, 0],
-		[a - x, b - y, 0],
-		[a + x, b - y, 0]
+		[a + x / 2, b + y / 2, 0],
+		[a - x / 2, b + y / 2, 0],
+		[a - x / 2, b - y / 2, 0],
+		[a + x / 2, b - y / 2, 0]
 	];
 	return new oc.BRepBuilderAPI_MakeFace_15(fromPoints(oc, points), true).Face();
 };
